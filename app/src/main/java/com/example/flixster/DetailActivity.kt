@@ -35,13 +35,23 @@ class DetailActivity : YouTubeBaseActivity() {
         release_date = findViewById(R.id.release_date)
         popular = findViewById(R.id.popular)
 
+
         val movie = intent.getParcelableExtra<Movie>(MOVIE_EXTRA) as Movie
         Log.i(TAG, "Movie is $movie")
-        tvTitle.text = movie.title.toString()
-        tvOverview.text = movie.overview
-        ratingBar.text = movie.movieId.toString() // get rating of movie
-        release_date.text = movie.release.toString()
-        popular.text = movie.popular.toFloat().toString()
+        val tit :String = movie.title
+        val over :String = movie.overview
+        val rat :String = movie.movieId.toString()
+        val rel :String =  movie.release.toString()
+        val pop:String = movie.popular.toString()
+
+
+
+
+        tvTitle.text = ("Name: $tit")
+        tvOverview.text = ("Symbol: $over")
+        ratingBar.text = ("Current Price: $rat") // get rating of movie
+        release_date.text = ("Highest Price in 24hrs: $rel")
+        popular.text = ("Price Change in 24hrs: $pop")
 
         val client = AsyncHttpClient()
         client.get(TRAILERS_URL.format(movie.movieId), object: JsonHttpResponseHandler(){
