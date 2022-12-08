@@ -1,60 +1,96 @@
-# Android Project 4 - *Flixter_p2*
+# Stocks and Coins
 
-Submitted by: **Efosa Isujeh**
+## Table of Contents
 
-**Name of your app** is a movie browsing app that allows users to browse ... [TODO] 
+1. [Overview](#Overview)
+1. [Product Spec](#Product-Spec)
+1. [Wireframes](#Wireframes)
 
-Time spent: **X** hours spent in total
+## Overview
+- [x] User Story
+- Sprints:
+  - Complete UI
+  - ADD API
+  - Application Optimization
 
-## Required Features
+### Description
 
-The following **required** functionality is completed:
+Allows the user to view Foreign/U.S. and crypto currency market information in real time. The user will be able to view Crypto Currencies, U.S. stock info, and foreign exchange prices and information in different screens as well as top trending crypto currencies and companies to trade. Using different APIs will allow us to display data to the user in each screen.
 
-- [x ] **Choose any endpoint on The MovieDB API except `now_playing`**
-  - Chosen Endpoint: `[Top rated]`
-- [x] **Make a request to your chosen endpoint and implement a RecyclerView to display all entries**
-- [ x] **Use Glide to load and display at least one image per entry**
-- [ x] **Click on an entry to view specific details about that entry using Intents**
+### App Evaluation
 
-The following **optional** features are implemented:
+- **Category:** Productivity
+- **Mobile:** Mobility is critical for this application as it uses real time APIs and being able to view, buy, and sell on the market whenever you want and wherever is important. 
+- **Story:** Crypto and stock traders are able to seamlessly view stocks and crypto currencies prices and trends. Allows the user to view information in real time and get the most updated data on where their assets stand.
+- **Market:** Within the last few years, crypto has been bigger than its ever been before, meaning the market is extremely large. People from all around the world buy, sell, and trade crypto daily meaning there is a constant need for trading applications.
+- **Habit:** The frequency of use from a user depends on the person. For example, someone who makes a living investing in crypto might use this app daily and constantly throughout their day, while someone who casually trades or has just started would use it perhaps once or twice a week. The average user would typically consume using this application, as there is no way to upload or edit data, only viewing of data.
+- **Scope:** On a scale of 1 to 10, we would say the technical challenge of this app would be a 7. This is because we would be using several different APIs at the same time and would need to take into the consideration of physical hardware capabilities of the end users device.
 
-- [ ] **Add another API call and RecyclerView that lets the user interact with different data.** 
-- [x] **Add rounded corners to the images using the Glide transformations**
-- [x] **Implement a shared element transition when user clicks into the details of a movie**
 
-The following **additional** features are implemented:
+## Product Spec
 
-- [ ] List anything else that you can get done to improve the app functionality!
+### 1. User Features (Required and Optional)
 
-## Video Walkthrough
+**Required Features**
 
-Here's a walkthrough of implemented user stories:
+* User can view U.S. Stocks
+* User can view International Exchange
+* User can view Crypto Currencies
+* User can view Trending stocks/crypto
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
-<!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
-<!-- Recommended tools:
-[Kap](https://getkap.co/) for macOS
-[ScreenToGif](https://www.screentogif.com/) for Windows
-[peek](https://github.com/phw/peek) for Linux. -->
+**Stretch Features**
 
-## Notes
+* Compare Stocks
+* View Graphs
+* Save portfolio
+* Login
+* Buy and Sell
 
-Describe any challenges encountered while building the app.
+### 2. Screen Archetypes
 
-## License
+- International Exchange
+  - A screen to look at the Internationalcurrencies and their exchange rate
+- Crypto
+  - A screen to look at the crypto options offered by the API
+- U.S. Market
+  - A screen to look at the U.S. Market Stocks offered by the API
+- Trending
+  - A screen to look at the trending Stocks and coins
 
-    Copyright [yyyy] [name of copyright owner]
 
-    Licensed under the Apache License, Version 2.0 (the "License");
-    you may not use this file except in compliance with the License.
-    You may obtain a copy of the License at
+### 3. Navigation
 
-        http://www.apache.org/licenses/LICENSE-2.0
+**Tab Navigation** (Tab to Screen)
 
-    Unless required by applicable law or agreed to in writing, software
-    distributed under the License is distributed on an "AS IS" BASIS,
-    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-    See the License for the specific language governing permissions and
-    limitations under the License.
+* International Exchange
+* Crypto
+* U.S. Market
+* Top/Trending Stocks & Crypto
+
+**Flow Navigation** (Screen to Screen)
+
+- International Currencies
+  - View of International Currency Prices
+- Crypto Screen
+  - View of Stock Information
+- US MARKET
+  - View of Stock Information
+- Trending
+  - View of Stock Information
+
+## User Story
+- User can open app to look at prices of stocks and their gain or loss
+- User can Look at different foreign exchange options
+- User can look at crypto Coin options
+
+## Wireframes
+
+<img src="https://github.com/Group-orgmsu/Project-Repo/blob/main/IMG_5653.jpg" width=600>
+
+### [BONUS] Digital Wireframes & Mockups
+<img src="https://github.com/Group-orgmsu/Project-Repo/blob/main/Screenshot%202022-11-14%20232248.png" width=600>
+
+### [BONUS] Interactive Prototype
+<img src="https://github.com/Group-orgmsu/Project-Repo/blob/main/stock.gif" width=600>
+
